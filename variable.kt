@@ -5,8 +5,12 @@ fun main()
     variabel merubah nilai*/
 
 
-    var namadepan = "Arief"
-    var namabelakang = "sanjaya"
+    var namadepan = "Tasya"
+    var namabelakang = "Tania Putri"
+    var role = "apa aja"
+    var umur:Int = 19
 
-    println("Nama Lengkap : " +namadepan + " "+ namabelakang)
+    println("Nama Lengkap \t : " +namadepan + " "+ namabelakang)
+    println("role \t: " + role)
+    println("umur \t: " + umur)
 }
