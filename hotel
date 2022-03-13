@@ -41,7 +41,7 @@ password varchar (25) not null
 );
 create table kamar
 (
-nomor_kamar int (5) primary key not null,
+nomor_kamar varchar (10) primary key not null,
 lantai enum ('1','2','3','4','5') not null,
 harga varchar (15) not null,
 tipe_kamar enum ('single', 'twin', 'double', 'family', 'connecting', 'standard', 'superior', 'deluxe', 'junior_suite', 'suite', 'presidential') not null,
