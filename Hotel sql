@@ -1,0 +1,66 @@
+create database reservasihotel;
+use reservasihotel;
+create table tamu
+(
+id_tamu int (12) primary key not null,
+Nama_tamu varchar (30) not null,
+alamat varchar (50) not null,
+Nik int (15) not null,
+nmr_telpon varchar (13) not null
+);
+create table admin
+(
+id_admin int (12) primary key not null,
+nama_admin varchar (30) not null,
+password varchar (25) not null
+);
+Create table fasilitas kamar
+(
+Wifi enum ('free')not null, 
+Kamar mandi (4) not null, 
+Tv (4) not null,
+Kopi/teh enum ('available', 'unvailable') not null, 
+Ac enum ('free') not null, 
+Telepon ('free') not null, 
+) ;
+Create table fasilitas umum hotel
+(
+Wifi enum ('free') not null, 
+Restoran enum ('available', 'unvailable') not null, 
+Parkir enum ('free') not null, 
+Kolam renang enum ('available', 'unvailable') not null, 
+Bar enum ('available', 'unvailable') not null, 
+Ac enum ('free') not null
+) ;
+create table resepsionis
+(
+id_resepsionis int (12) primary key not null,
+nama_resepsionis varchar (30) not null,
+password varchar (25) not null
+);
+create table kamar
+(
+nomor_kamar int (5) primary key not null,
+lantai enum ('1','2','3','4','5') not null,
+harga varchar (15) not null,
+tipe_kamar enum ('single', 'twin', 'double', 'family', 'connecting', 'standard', 'superior', 'deluxe', 'junior_suite', 'suite', 'presidential') not null,
+status enum ('available', 'unavailable') not null,
+);
+create table reservasi
+(
+id_reservasi int (12) primary key not null,
+nama_tamu varchar (30) not null,
+jumlah_tamu int (3) not null,
+jumlah_hari int (2) not null,
+tipe_kamar enum ('single', 'twin', 'double', 'family', 'connecting', 'standard', 'superior', 'deluxe', 'junior_suite', 'suite', 'presidential') not null,
+tgl_reservasi date not null,
+tgl_check_in date not null,
+tgl_check_out date not null,
+harga varchar (15) not null,
+id_resepsionis int (12) not null,
+foreign key (id_resepsionis) references resepsionis (id_resepsionis),
+nomor_kamar int (5)  not null,
+foreign key (nomor_kamar) references kamar (nomor_kamar),
+id_tamu int (12) not null,
+foreign key (id_tamu) references tamu (id_tamu)
+);
