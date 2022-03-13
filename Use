@@ -1,0 +1,44 @@
+Use hotel;
+Insert into admin values
+(“1”,”panca”,”11”),
+(“2”,,”Luna,”12”),
+(“3”,”Angel”,”13”),
+(“4”,”yumi”,”14”),
+(“5”,”lesti”,”15”),
+(“6”,”gani”,”16”);
+
+insert into resepsionis values
+(“11”,”gesa”,”11”),
+(“12”,,”Selen”,”12”),
+(“13”,”Ana”,”13”),
+(“14”,”area”,”14”),
+(“15”,”alex,”15”),
+(“16”,”Leo”,”16”);
+
+insert into fasilitas_kamar values
+(“Free”,”1”,”1”,”available”,”free”,”free”);
+
+insert into fasilitas_umum_hotel values
+(“Free”,”available”,”free”,available”,”available”,”Free”);
+
+insert into kamar values
+(“01-20”,”1”,”200000”,”single”,”available”),
+(“21-23”,”1”,”200000”,”single”,”available”),
+(“27-28”,”1”,”400000”,”connecting”,”available”),
+(“40-41”,”1”,”500000”,”family”,”available”),
+(“45-50”,”1”,”250000”,”twin”,”available”),
+(“71-80”,”1”,”300000”,”double”,”available”),
+(“88-100”,”2”,”200000”,”single”,”available”),
+(“105-110”,”2”,”200000”,”single”,”available”),
+(“137-150”2,”500000”,”family”,”available”),
+(“151-160”,”2”,”250000”,”twin”,”available”),
+(“171-200”,”3”,”300000”,”double”,”available”),
+(“202-209”,”3”,”200000”,”single”,”free”,”available”),
+(“215-235”,”3”,”200000”,”single”,”available”),
+(“215-235”,”3”,”250000”,”twin”,”available”),
+(“240-245”,”3”,”500000”,”family”,”available”),
+(“260-280”,”4”,”200000”,”single”,”available”),
+(“285-288”,”5”,”200000”,”single”,”available”),
+(“289-290”,”5”,”400000”,”connecting”,”available”),
+(“295-300”,”5”,”200000”,”single”,”available”),
+(“301-302”,”5”,”200000”,”single”,”available”);
