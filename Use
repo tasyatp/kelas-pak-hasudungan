@@ -1,10 +1,10 @@
 Use hotel;
 Insert into admin values
-(“1”,”panca”,”11”),
-(“2”,,”Luna,”12”),
-(“3”,”Angel”,”13”),
-(“4”,”yumi”,”14”),
-(“5”,”lesti”,”15”),
+("1","panca","11"),
+("2","Luna","12"),
+("3","Angel","13"),
+("4","yumi","14"),
+("5","lesti","15"),
 (“6”,”gani”,”16”);
 
 insert into resepsionis values
