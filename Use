@@ -1,17 +1,17 @@
 Use hotel;
 insert into admin values
-("11", "qured", "1111"), 
-("22", " Ferdi", "2222"), 
-("33", " Desi, "3333"), 
-("44", " Len", "4444"), 
-("55", " Alex", "5555") ;
+("11","qured","1111"), 
+("22","Ferdi","2222"), 
+("33","Desi,"3333"), 
+("44","Len","4444"), 
+("55","Alex","5555");
 
 insert into resepsionis values
-("001", " Christina", "1111"), 
-("002", " Alam", "2222"), 
-("003", " Diva", "3333"),
-("004", " Karti", "4444"),
-("005", " Fitri", "5555");
+("001","Christina", "1111"), 
+("002","Alam","2222"), 
+("003","Diva","3333"),
+("004","Karti","4444"),
+("005","Fitri","5555");
 
 insert into fasilitas_kamar values
 ("Free","1","1","available","free","free");
