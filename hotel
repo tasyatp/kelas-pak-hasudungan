@@ -44,7 +44,7 @@ create table kamar
 nomor_kamar varchar (10) primary key not null,
 lantai enum ('1','2','3','4','5') not null,
 harga varchar (15) not null,
-tipe_kamar enum ('single', 'twin', 'double', 'family', 'connecting', 'standard', 'superior', 'deluxe', 'junior_suite', 'suite', 'presidential') not null,
+tipe_kamar varchar (20) not null,
 status enum ('available', 'unavailable') not null
 );
 create table reservasi
@@ -53,11 +53,10 @@ id_reservasi int (12) primary key not null,
 nama_tamu varchar (30) not null,
 jumlah_tamu int (3) not null,
 jumlah_hari int (2) not null,
-tipe_kamar enum ('single', 'twin', 'double', 'family', 'connecting', 'standard', 'superior', 'deluxe', 'junior_suite', 'suite', 'presidential') not null,
+tipe_kamar varchar (20) not null,
 tgl_reservasi date not null,
 tgl_check_in date not null,
-tgl_check_out date not null,
-harga varchar (15) not null, 
+tgl_check_out date not null, 
 id_tamu int (12) not null,
 foreign key (id_tamu) references tamu (id_tamu)
 );
