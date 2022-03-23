@@ -2,7 +2,7 @@ Use hotel;
 insert into admin values
 ("11","qured","1111"), 
 ("22","Ferdi","2222"), 
-("33","Desi,"3333"), 
+("33","Desi","3333"), 
 ("44","Len","4444"), 
 ("55","Alex","5555");
 
@@ -31,7 +31,7 @@ insert into kamar values
 ("137-150","2","500000","family","available"),
 ("151-160","2","250000","twin","available"),
 ("171-200","3","300000","double","available"),
-("202-209","3","200000","single","free","available"),
+("202-209","3","200000","single","available"),
 ("215-235","3","200000","single","available"),
 ("240-245","3","500000","family","available"),
 ("260-280","4","200000","single","available"),
